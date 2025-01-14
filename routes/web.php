@@ -8,7 +8,7 @@ require __DIR__ . '/extensions.php';
 
 if (!Routing::useLaravelRouting()) {
     Route::view('/{path?}', 'app')
-    ->where('path', '^(?!(\/)?(api|static|images)).+');
+        ->where('path', '^(?!(\/)?(api|static|images)).+');
 }
 
 /*
@@ -69,6 +69,10 @@ Route::group(['prefix' => 'announcements'], function () {
 
 Route::group(['prefix' => 'media'], function () {
     Route::get('/', [App\Http\Controllers\MediaController::class, 'index'])->name('media.index');
+});
+
+Route::group(['prefix' => 'legal-notice'], function () {
+    Route::get('/', [App\Http\Controllers\LegalNotice::class, 'index'])->name('media.index');
 });
 
 Route::group(['prefix' => 'client/products', 'middleware' => 'auth'], function () {
