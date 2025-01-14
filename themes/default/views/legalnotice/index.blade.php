@@ -8,7 +8,7 @@
                 </header>
 
                 <h2 class="font-semibold text-xl mb-2 mt-2 text-secondary-900">
-                    {{ __('Angaben gemäß § 5 TMG:') }}
+                    {{ __('Information according to § 5 TMG:') }}
                 </h2>
 
                 <p>Thorsten Schnack</p>
@@ -16,70 +16,61 @@
                 <p>30890 Barsinghausen</p>
 
                 <h2 class="font-semibold text-xl mb-2 mt-2 text-secondary-900">
-                    {{ __('Vertreten durch:') }}
+                    {{ __('Represented by:') }}
                 </h2>
 
                 <p>Folgt</p>
 
                 <h2 class="font-semibold text-xl mb-2 mt-2 text-secondary-900">
-                    {{ __('Kontakt:') }}
+                    {{ __('Contact:') }}
                 </h2>
 
-                <p>{{ __('Telefon:') }} {{ __('nur auf Anfrage per E-Mail') }}</p>
-                <p>{{ __('E-Mail:') }} info[aet]mygserver.de</p>
-                <p>{{ __('Webseite:') }} https://www.mygserver.de</p>
+                <p>{{ __('Phone:') }} {{ __('nur auf Anfrage per E-Mail') }}</p>
+                <p>{{ __('Mail:') }} info[aet]mygserver.de</p>
+                <p>{{ __('Website:') }} https://www.mygserver.de</p>
 
                 <h2 class="font-semibold text-xl mb-2 mt-2 text-secondary-900">
-                    {{ __('Haftung für Inhalte') }}
+                    {{ __('Liability for content') }}
                 </h2>
                 <p>
-                    {{ __('Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach
-                    den
-                    allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht
-                    verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen
-                    zu
-                    forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder
-                    Sperrung
-                    der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine
-                    diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten
-                    Rechtsverletzung
-                    möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend
-                    entfernen.') }}
+                    {{ __('As a service provider, we are responsible for our own content on these pages in accordance
+                    with Section 7 Paragraph 1 TMG
+                    responsible for general laws. However, according to Sections 8 to 10 TMG, we are not a service
+                    provider
+                    obliged to monitor transmitted or stored third-party information or according to circumstances
+                    to conduct research that indicates illegal activity. Obligations to remove or
+                    Blocking the use of information in accordance with general laws remains unaffected. However,
+                    liability in this regard only arises from the time of knowledge of a specific legal violation
+                    possible. If we become aware of any corresponding legal violations, we will immediately remove this
+                    content.') }}
                 </p>
 
                 <h2 class="font-semibold text-xl mb-2 mt-2 text-secondary-900">
-                    {{ __('Haftung für Links') }}
+                    {{ __('Liability for links') }}
                 </h2>
                 <p>
-                    {{ __('Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen
-                    Einfluss
-                    haben.
-                    Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der
-                    verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die
-                    verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft.
-                    Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente
-                    inhaltliche
-                    Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht
-                    zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.')
+                    {{ __('Our offer contains links to external third-party websites over whose content we have no
+                    influence. We therefore cannot assume any liability for this external content. The respective
+                    provider or operator of the pages is always responsible for the content of the linked pages. The
+                    linked pages were checked for possible legal violations at the time of linking. Illegal content was
+                    not apparent at the time of linking. However, permanent control of the content of the linked pages
+                    is unreasonable without concrete evidence of a legal violation. If we become aware of any legal
+                    violations, we will immediately remove such links.')
                     }}
                 </p>
 
                 <h2 class="font-semibold text-xl mb-2 mt-2 text-secondary-900">
-                    {{ __('Urheberrecht') }}
+                    {{ __('Copyright') }}
                 </h2>
                 <p>
-                    {{ __('Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem
-                    deutschen
-                    Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb
-                    der
-                    Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw.
-                    Erstellers.
-                    Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
-                    Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte
-                    Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie
-                    trotzdem
-                    auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei
-                    Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.') }}
+                    {{ __('The content and works on these pages created by the site operators are subject to German
+                    copyright law. Reproduction, processing, distribution and any kind of exploitation outside the
+                    limits of copyright law require the written consent of the respective author or creator. Downloads
+                    and copies of this page are only permitted for private, non-commercial use. If the content on this
+                    site was not created by the operator, the copyrights of third parties are respected. In particular,
+                    third-party content is marked as such. Should you nevertheless become aware of a copyright
+                    infringement, we ask that you notify us accordingly. If we become aware of any legal violations, we
+                    will immediately remove such content.') }}
                 </p>
 
                 <h2 class="font-semibold text-xl mb-2 mt-2 text-secondary-900">
