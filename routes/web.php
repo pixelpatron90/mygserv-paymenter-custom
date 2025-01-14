@@ -72,7 +72,7 @@ Route::group(['prefix' => 'media'], function () {
 });
 
 Route::group(['prefix' => 'legal-notice'], function () {
-    Route::get('/', [App\Http\Controllers\LegalNotice::class, 'index'])->name('legalnotice.index');
+    Route::get('/', [App\Http\Controllers\LegalNoticeController::class, 'index'])->name('legalnotice.index');
 });
 
 Route::group(['prefix' => 'client/products', 'middleware' => 'auth'], function () {
