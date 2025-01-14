@@ -7,7 +7,7 @@
                     <h2 class="font-semibold text-2xl mb-2 mt-2 text-secondary-900">{{ __('Legal notice') }}</h2>
                 </header>
 
-                <h2 class="font-semibold text-2xl mb-2 mt-2 text-secondary-900">Angaben gemäß § 5 TMG:</h2>
+                <h2 class="font-semibold text-xl mb-2 mt-2 text-secondary-900">Angaben gemäß § 5 TMG:</h2>
 
                 [Name des Anbieters][Adresse des Anbieters][PLZ Ort]
 
