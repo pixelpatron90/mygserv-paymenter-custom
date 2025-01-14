@@ -74,16 +74,16 @@
                 </p>
 
                 <h2 class="font-semibold text-xl mb-2 mt-2 text-secondary-900">
-                    {{ __('Streitbeilegung') }}
+                    {{ __('Dispute resolution') }}
                 </h2>
                 <p>
-                    {{ __('Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:') }}
+                    {{ __('The European Commission provides a platform for online dispute resolution (OS):') }}
                     https://ec.europa.eu/consumers/odr.
                 </p>
 
                 <p>
-                    {{ __('Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
-                    Verbraucherschlichtungsstelle teilzunehmen.') }}
+                    {{ __('We are not willing or obliged to take part in dispute resolution proceedings before a
+                    consumer arbitration board.') }}
                 </p>
             </div>
         </div>
