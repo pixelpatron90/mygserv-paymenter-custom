@@ -58,38 +58,12 @@
                 <div class="prose dark:prose-invert min-w-full">
                   <header class="flex flex-row gap-4">
                     <x-microns-info class="w-6" />
-                    <h2 class="font-semibold text-2xl mb-2 mt-2 text-secondary-900">Who or what is mygserv.de?</h2>
+                    <h2 class="font-semibold text-2xl mb-2 mt-2 text-secondary-900">
+                        {{ __('Who or what is mygserv.de?') }}
+                    </h2>
                   </header>
-					
                   <p>
-                  Lorem ipsum odor amet, consectetuer adipiscing elit. Quis cras nisi hendrerit finibus nostra luctus? Ullamcorper sagittis suscipit condimentum mauris lectus vehicula mollis nec fusce. Neque laoreet natoque potenti commodo diam velit. Per bibendum ante eu justo bibendum phasellus pharetra tellus. Nisi mi litora nulla vel natoque eros augue. Justo ultrices nibh tristique vivamus; molestie turpis.
-					Hendrerit posuere iaculis litora placerat habitasse convallis. Netus mauris fusce dignissim; scelerisque a neque. Tempus viverra pretium laoreet sem arcu mollis natoque duis. Ex ligula parturient laoreet dolor hac parturient consequat. Nam himenaeos netus nec commodo amet curabitur potenti auctor. Arcu neque aenean facilisis, interdum congue enim! Aptent dictumst fames vulputate volutpat nascetur faucibus mauris volutpat? Faucibus non cras; porta interdum ridiculus interdum dictum.
-                  </p>
-                </div>
-            </div>
-          
-          <div class="content-box mt-6">
-                <div class="prose dark:prose-invert min-w-full">
-                  <header class="flex flex-row gap-4">
-                    <x-microns-info class="w-6" />
-					<h2 class="font-semibold text-2xl mb-2 mt-2 text-secondary-900">What is your goal, your motivation?</h2>
-                    </header>
-                  <p>
-                  Lorem ipsum odor amet, consectetuer adipiscing elit. Quis cras nisi hendrerit finibus nostra luctus? Ullamcorper sagittis suscipit condimentum mauris lectus vehicula mollis nec fusce. Neque laoreet natoque potenti commodo diam velit. Per bibendum ante eu justo bibendum phasellus pharetra tellus. Nisi mi litora nulla vel natoque eros augue. Justo ultrices nibh tristique vivamus; molestie turpis.
-					Hendrerit posuere iaculis litora placerat habitasse convallis. Netus mauris fusce dignissim; scelerisque a neque. Tempus viverra pretium laoreet sem arcu mollis natoque duis. Ex ligula parturient laoreet dolor hac parturient consequat. Nam himenaeos netus nec commodo amet curabitur potenti auctor. Arcu neque aenean facilisis, interdum congue enim! Aptent dictumst fames vulputate volutpat nascetur faucibus mauris volutpat? Faucibus non cras; porta interdum ridiculus interdum dictum.
-                  </p>
-                </div>
-            </div>
-          
-          <div class="content-box mt-6">
-                <div class="prose dark:prose-invert min-w-full">
-                  <header class="flex flex-row gap-4">
-                    <x-microns-info class="w-6" />
-					<h2 class="font-semibold text-2xl mb-2 mt-2 text-secondary-900">Is it really free?</h2>
-                    </header>
-                  <p>
-                  Lorem ipsum odor amet, consectetuer adipiscing elit. Quis cras nisi hendrerit finibus nostra luctus? Ullamcorper sagittis suscipit condimentum mauris lectus vehicula mollis nec fusce. Neque laoreet natoque potenti commodo diam velit. Per bibendum ante eu justo bibendum phasellus pharetra tellus. Nisi mi litora nulla vel natoque eros augue. Justo ultrices nibh tristique vivamus; molestie turpis.
-					Hendrerit posuere iaculis litora placerat habitasse convallis. Netus mauris fusce dignissim; scelerisque a neque. Tempus viverra pretium laoreet sem arcu mollis natoque duis. Ex ligula parturient laoreet dolor hac parturient consequat. Nam himenaeos netus nec commodo amet curabitur potenti auctor. Arcu neque aenean facilisis, interdum congue enim! Aptent dictumst fames vulputate volutpat nascetur faucibus mauris volutpat? Faucibus non cras; porta interdum ridiculus interdum dictum.
+                  Lorem Ipsum
                   </p>
                 </div>
             </div>
