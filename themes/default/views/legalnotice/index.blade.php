@@ -82,8 +82,7 @@
                 </p>
 
                 <p>
-                    {{ __('We are not willing or obliged to take part in dispute resolution proceedings before a
-                    consumer arbitration board.') }}
+                    {{ __('We are not willing or obliged to take part in dispute resolution proceedings before a consumer arbitration board.') }}
                 </p>
             </div>
         </div>
