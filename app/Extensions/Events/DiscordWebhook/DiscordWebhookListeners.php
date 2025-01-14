@@ -16,7 +16,7 @@ class DiscordWebhookListeners
         $data = [
             'embeds' => [
                 [
-                    'title' =>  $title,
+                    'title' => $title,
                     'description' => $message,
                     'color' => hexdec($color),
                     'fields' => $fields,
@@ -129,17 +129,17 @@ class DiscordWebhookListeners
             [
                 'name' => 'User ID',
                 'value' => '[#' . $user->id . '](' . route('admin.clients.edit', $user->id) . ')',
-                'inline' => true,
+                'inline' => false,
             ],
             [
                 'name' => 'User name',
                 'value' => $user->name,
-                'inline' => true,
+                'inline' => false,
             ],
             [
                 'name' => 'User email',
                 'value' => $user->email,
-                'inline' => true,
+                'inline' => false,
             ],
         ];
         $this->sendWebhook('New user', $message, $fields);
