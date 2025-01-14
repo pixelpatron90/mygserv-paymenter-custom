@@ -9,7 +9,6 @@
                 <h3 class="text-lg text-secondary-800 leading-5 font-semibold">
                     {{ $product->name }}</h3>
                 <p>
-                    asdasd
                     <x-money :amount="$product->price()" showFree="true" />
                 </p>
             </div>

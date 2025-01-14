@@ -1,6 +1,6 @@
 @props(['amount' => null, 'showFree' => false])
 @if ($amount == 0 && $showFree)
-    {{ _('Free') }}
+    {{ __('Free') }}
 @else
     @if (config('settings::currency_position') == 'left')
         {{ config('settings::currency_sign') }}
