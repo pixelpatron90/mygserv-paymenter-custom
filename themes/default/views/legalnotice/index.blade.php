@@ -63,14 +63,7 @@
                     {{ __('Copyright') }}
                 </h2>
                 <p>
-                    {{ __('The content and works on these pages created by the site operators are subject to German
-                    copyright law. Reproduction, processing, distribution and any kind of exploitation outside the
-                    limits of copyright law require the written consent of the respective author or creator. Downloads
-                    and copies of this page are only permitted for private, non-commercial use. If the content on this
-                    site was not created by the operator, the copyrights of third parties are respected. In particular,
-                    third-party content is marked as such. Should you nevertheless become aware of a copyright
-                    infringement, we ask that you notify us accordingly. If we become aware of any legal violations, we
-                    will immediately remove such content.') }}
+                    {{ __('The content and works on these pages created by the site operators are subject to German copyright law. Reproduction, processing, distribution and any kind of exploitation outside the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this page are only permitted for private, non-commercial use. If the content on this site was not created by the operator, the copyrights of third parties are respected. In particular, third-party content is marked as such. Should you nevertheless become aware of a copyright infringement, we ask that you notify us accordingly. If we become aware of any legal violations, we will immediately remove such content.') }}
                 </p>
 
                 <h2 class="font-semibold text-xl mb-2 mt-2 text-secondary-900">
