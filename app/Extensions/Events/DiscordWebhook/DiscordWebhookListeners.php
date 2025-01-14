@@ -54,22 +54,22 @@ class DiscordWebhookListeners
             [
                 'name' => 'Invoice ID',
                 'value' => '[#' . $invoice->id . '](' . route('admin.invoices.show', $invoice->id) . ')',
-                'inline' => true,
+                'inline' => false,
             ],
             [
                 'name' => 'Invoice total',
                 'value' => config('settings::currency_sign') . $invoice->total(),
-                'inline' => true,
+                'inline' => false,
             ],
             [
                 'name' => 'Invoice status',
                 'value' => $invoice->status,
-                'inline' => true,
+                'inline' => false,
             ],
             [
                 'name' => 'Invoice user',
                 'value' => '[' . $invoice->user->name . '](' . route('admin.clients.edit', $invoice->user->id) . ')',
-                'inline' => true,
+                'inline' => false,
             ],
         ];
         $this->sendWebhook('New invoice created', $message, $fields);
@@ -95,27 +95,27 @@ class DiscordWebhookListeners
             [
                 'name' => 'Ticket ID',
                 'value' => '[#' . $ticket->id . '](' . route('admin.tickets.show', $ticket->id) . ')',
-                'inline' => true,
+                'inline' => false,
             ],
             [
                 'name' => 'Ticket status',
                 'value' => $ticket->status,
-                'inline' => true,
+                'inline' => false,
             ],
             [
                 'name' => 'Ticket priority',
                 'value' => $ticket->priority,
-                'inline' => true,
+                'inline' => false,
             ],
             [
                 'name' => 'Ticket subject',
                 'value' => $ticket->title,
-                'inline' => true,
+                'inline' => false,
             ],
             [
                 'name' => 'Ticket user',
                 'value' => '[' . $message->user->name . '](' . route('admin.clients.edit', $message->user->id) . ')',
-                'inline' => true,
+                'inline' => false,
             ],
         ];
         $this->sendWebhook('New ticket message', $dcmessage, $fields);
@@ -153,27 +153,27 @@ class DiscordWebhookListeners
             [
                 'name' => 'Ticket ID',
                 'value' => '[#' . $ticket->id . '](' . route('admin.tickets.show', $ticket->id) . ')',
-                'inline' => true,
+                'inline' => false,
             ],
             [
                 'name' => 'Ticket status',
                 'value' => $ticket->status,
-                'inline' => true,
+                'inline' => false,
             ],
             [
                 'name' => 'Ticket priority',
                 'value' => $ticket->priority,
-                'inline' => true,
+                'inline' => false,
             ],
             [
                 'name' => 'Ticket subject',
                 'value' => $ticket->title,
-                'inline' => true,
+                'inline' => false,
             ],
             [
                 'name' => 'Ticket user',
                 'value' => '[' . $ticket->user->name . '](' . route('admin.clients.edit', $ticket->user->id) . ')',
-                'inline' => true,
+                'inline' => false,
             ],
         ];
         $this->sendWebhook('New ticket', $message, $fields);
