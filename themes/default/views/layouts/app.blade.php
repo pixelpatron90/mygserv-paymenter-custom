@@ -114,7 +114,9 @@
     <div id="app" class="min-h-screen">
         <x-paymenter-update />
         <div class="bg-red-500">
-asdasd
+            <div class="max-w-[1650px] mx-auto block md:flex items-center gap-x-10 px-5">
+                SDASD
+            </div>
         </div>
         @if (!$clients || config('settings::sidebar') == 0)
             @include('layouts.navigation')
