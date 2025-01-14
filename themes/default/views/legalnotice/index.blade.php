@@ -9,11 +9,19 @@
 
                 <h2 class="font-semibold text-xl mb-2 mt-2 text-secondary-900">Angaben gemäß § 5 TMG:</h2>
 
-                [Name des Anbieters][Adresse des Anbieters][PLZ Ort]
+                <p>Thorsten Schnack</p>
+                <p>Am Heidorn 7</p>
+                <p>30890 Barsinghausen</p>
 
-                Vertreten durch:[Name des gesetzlichen Vertreters oder Verantwortlichen]
+                <h2 class="font-semibold text-xl mb-2 mt-2 text-secondary-900">Vertreten durch:</h2>
 
-                Kontakt:Telefon: [Telefonnummer]E-Mail: [E-Mail-Adresse]Website: [Website-URL]
+                <p>Folgt</p>
+
+                <h2 class="font-semibold text-xl mb-2 mt-2 text-secondary-900">Kontakt:</h2>
+
+                <p>Telefon: nur auf Anfrage per E-Mail</p>
+                <p>E-Mail: info@mygserver.de</p>
+                <p>Website: https://www.mygserver.de</p>
 
                 Umsatzsteuer-ID:Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: [falls zutreffend]
 
