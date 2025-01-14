@@ -33,29 +33,14 @@
                     {{ __('Liability for content') }}
                 </h2>
                 <p>
-                    {{ __('As a service provider, we are responsible for our own content on these pages in accordance
-                    with Section 7 Paragraph 1 TMG
-                    responsible for general laws. However, according to Sections 8 to 10 TMG, we are not a service
-                    provider
-                    obliged to monitor transmitted or stored third-party information or according to circumstances
-                    to conduct research that indicates illegal activity. Obligations to remove or
-                    Blocking the use of information in accordance with general laws remains unaffected. However,
-                    liability in this regard only arises from the time of knowledge of a specific legal violation
-                    possible. If we become aware of any corresponding legal violations, we will immediately remove this
-                    content.') }}
+                    {{ __('As a service provider, we are responsible for our own content on these pages in accordance with Section 7 Paragraph 1 TMG responsible for general laws. However, according to Sections 8 to 10 TMG, we are not a service provider obliged to monitor transmitted or stored third-party information or according to circumstances to conduct research that indicates illegal activity. Obligations to remove or Blocking the use of information in accordance with general laws remains unaffected. However, liability in this regard only arises from the time of knowledge of a specific legal violation possible. If we become aware of any corresponding legal violations, we will immediately remove this content.') }}
                 </p>
 
                 <h2 class="font-semibold text-xl mb-2 mt-2 text-secondary-900">
                     {{ __('Liability for links') }}
                 </h2>
                 <p>
-                    {{ __('Our offer contains links to external third-party websites over whose content we have no
-                    influence. We therefore cannot assume any liability for this external content. The respective
-                    provider or operator of the pages is always responsible for the content of the linked pages. The
-                    linked pages were checked for possible legal violations at the time of linking. Illegal content was
-                    not apparent at the time of linking. However, permanent control of the content of the linked pages
-                    is unreasonable without concrete evidence of a legal violation. If we become aware of any legal
-                    violations, we will immediately remove such links.')
+                    {{ __('Our offer contains links to external third-party websites over whose content we have no influence. We therefore cannot assume any liability for this external content. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not apparent at the time of linking. However, permanent control of the content of the linked pages is unreasonable without concrete evidence of a legal violation. If we become aware of any legal violations, we will immediately remove such links.')
                     }}
                 </p>
 
