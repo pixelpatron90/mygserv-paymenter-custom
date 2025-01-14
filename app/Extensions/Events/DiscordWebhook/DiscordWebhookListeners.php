@@ -72,7 +72,7 @@ class DiscordWebhookListeners
                 'inline' => false,
             ],
         ];
-        $this->sendWebhook('New invoice created', $message, $fields);
+        $this->sendWebhook('New invoice was created!', $message, $fields);
     }
 
     /**
@@ -82,7 +82,7 @@ class DiscordWebhookListeners
     {
         $invoice = $event->invoice;
         $message = "Invoice paid: {$invoice->id} - {$invoice->user->name} -  " . config('settings::currency_sign') . "{$invoice->total()}";
-        $this->sendWebhook('Invoice paid', $message);
+        $this->sendWebhook('Invoice was paid!', $message);
     }
 
 
@@ -118,7 +118,7 @@ class DiscordWebhookListeners
                 'inline' => false,
             ],
         ];
-        $this->sendWebhook('New ticket message', $dcmessage, $fields);
+        $this->sendWebhook('New ticket message was send!', $dcmessage, $fields);
     }
 
     public function newUser($event)
@@ -142,7 +142,7 @@ class DiscordWebhookListeners
                 'inline' => false,
             ],
         ];
-        $this->sendWebhook('New user', $message, $fields);
+        $this->sendWebhook('New user has registered!', $message, $fields);
     }
 
     public function newTicket($event)
@@ -176,7 +176,7 @@ class DiscordWebhookListeners
                 'inline' => false,
             ],
         ];
-        $this->sendWebhook('New ticket', $message, $fields);
+        $this->sendWebhook('New ticket was created!', $message, $fields);
     }
 
     /**
