@@ -7,24 +7,34 @@
                     <h2 class="font-semibold text-2xl mb-2 mt-2 text-secondary-900">{{ __('Legal notice') }}</h2>
                 </header>
 
-                <h2 class="font-semibold text-xl mb-2 mt-2 text-secondary-900">Angaben gemäß § 5 TMG:</h2>
+                <h2 class="font-semibold text-xl mb-2 mt-2 text-secondary-900">
+                    {{ __('Angaben gemäß § 5 TMG:') }}
+                </h2>
 
                 <p>Thorsten Schnack</p>
                 <p>Am Heidorn 7</p>
                 <p>30890 Barsinghausen</p>
 
-                <h2 class="font-semibold text-xl mb-2 mt-2 text-secondary-900">Vertreten durch:</h2>
+                <h2 class="font-semibold text-xl mb-2 mt-2 text-secondary-900">
+                    {{ __('Vertreten durch:') }}
+                </h2>
 
                 <p>Folgt</p>
 
-                <h2 class="font-semibold text-xl mb-2 mt-2 text-secondary-900">Kontakt:</h2>
+                <h2 class="font-semibold text-xl mb-2 mt-2 text-secondary-900">
+                    {{ __('Kontakt:') }}
+                </h2>
 
-                <p>Telefon: nur auf Anfrage per E-Mail</p>
-                <p>E-Mail: info@mygserver.de</p>
-                <p>Website: https://www.mygserver.de</p>
+                <p>{{ __('Telefon:') }} {{ __('nur auf Anfrage per E-Mail') }}</p>
+                <p>{{ __('E-Mail:') }} info[aet]mygserver.de</p>
+                <p>{{ __('Webseite:') }} https://www.mygserver.de</p>
 
-                <h2 class="font-semibold text-xl mb-2 mt-2 text-secondary-900">Haftung für Inhalte</h2>
-                <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den
+                <h2 class="font-semibold text-xl mb-2 mt-2 text-secondary-900">
+                    {{ __('Haftung für Inhalte') }}
+                </h2>
+                <p>
+                    {{ __('Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach
+                    den
                     allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht
                     verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen
                     zu
@@ -34,7 +44,8 @@
                     diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten
                     Rechtsverletzung
                     möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend
-                    entfernen.</p>
+                    entfernen.') }}
+                </p>
 
                 <h2 class="font-semibold text-xl mb-2 mt-2 text-secondary-900">Haftung für Links</h2>
                 <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss
@@ -64,7 +75,7 @@
 
                 <h2 class="font-semibold text-xl mb-2 mt-2 text-secondary-900">Streitbeilegung</h2>
                 <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
-                    https://ec.europa.eu/consumers/odr. Unsere E-Mail-Adresse finden Sie oben im Impressum.
+                    https://ec.europa.eu/consumers/odr.</p>
 
                 <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
                     Verbraucherschlichtungsstelle teilzunehmen.</p>
