@@ -113,7 +113,9 @@
     @endif
     <div id="app" class="min-h-screen">
         <x-paymenter-update />
-        adasd
+        <div class="bg-red-500">
+asdasd
+        </div>
         @if (!$clients || config('settings::sidebar') == 0)
             @include('layouts.navigation')
         @endif
