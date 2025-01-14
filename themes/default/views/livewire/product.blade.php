@@ -25,9 +25,9 @@
                 <button class="button button-secondary w-full @if ($added) !text-green-400 @endif"
                     wire:click="addToCart">
                     @if ($added)
-                        Added to cart <i class="ri-check-line"></i>
+                        {{ __('Added to cart') }} <i class="ri-check-line"></i>
                     @else
-                        Add to cart <i class="ri-shopping-cart-2-line"></i>
+                        {{ __('Added to cart') }} <i class="ri-shopping-cart-2-line"></i>
                     @endif
                 </button>
             @endif
