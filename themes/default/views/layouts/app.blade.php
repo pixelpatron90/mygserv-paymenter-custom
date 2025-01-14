@@ -113,6 +113,7 @@
     @endif
     <div id="app" class="min-h-screen">
         <x-paymenter-update />
+        adasd
         @if (!$clients || config('settings::sidebar') == 0)
             @include('layouts.navigation')
         @endif
