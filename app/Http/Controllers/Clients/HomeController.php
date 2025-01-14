@@ -126,16 +126,18 @@ class HomeController extends Controller
         $request->validate([
             'first_name' => 'required|string',
             'last_name' => 'required|string',
-            'address' => (config('settings::requiredClientDetails_address') == 1 ? 'required|': 'nullable|') . 'string',
-            'city' => (config('settings::requiredClientDetails_city') == 1 ? 'required|': 'nullable|') . 'string',
-            'country' => (config('settings::requiredClientDetails_country') == 1 ? 'required|': 'nullable|') . 'string|in:' . implode(',', array_keys($countries)),
-            'phone' => (config('settings::requiredClientDetails_phone') == 1 ? 'required|': 'nullable|') . 'string',
-            'zip' => (config('settings::requiredClientDetails_zip') == 1 ? 'required|': 'nullable|') . 'string',
+            'username' => 'required|string',
+            'address' => (config('settings::requiredClientDetails_address') == 1 ? 'required|' : 'nullable|') . 'string',
+            'city' => (config('settings::requiredClientDetails_city') == 1 ? 'required|' : 'nullable|') . 'string',
+            'country' => (config('settings::requiredClientDetails_country') == 1 ? 'required|' : 'nullable|') . 'string|in:' . implode(',', array_keys($countries)),
+            'phone' => (config('settings::requiredClientDetails_phone') == 1 ? 'required|' : 'nullable|') . 'string',
+            'zip' => (config('settings::requiredClientDetails_zip') == 1 ? 'required|' : 'nullable|') . 'string',
         ]);
 
         $user = $request->user();
         $user->first_name = $request->first_name;
         $user->last_name = $request->last_name;
+        $user->username = $request->username;
         $user->address = $request->address;
         $user->city = $request->city;
         $user->country = $request->country;
@@ -230,14 +232,15 @@ class HomeController extends Controller
             $request->validate([
                 'code' => 'required|unique:affiliates,code',
             ]);
-        };
+        }
+        ;
         $affiliate = new Affiliate();
         $affiliate->user()->associate($user);
         if (config('settings::affiliate_type') == 'custom') {
             $affiliate->code = $request->code;
-        } else if(config('settings::affiliate_type') == 'random') {
+        } else if (config('settings::affiliate_type') == 'random') {
             $affiliate->code = Str::random(10);
-        } else if(config('settings::affiliate_type') == 'fixed') {
+        } else if (config('settings::affiliate_type') == 'fixed') {
             $affiliate->code = str_replace(' ', '', $user->name);
         }
         $affiliate->save();
