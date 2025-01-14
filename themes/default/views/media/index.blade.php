@@ -7,8 +7,7 @@
           <h2 class="font-semibold text-2xl mb-2 mt-2 text-secondary-900">{{ __('Media') }}</h2>
         </header>
         <p>
-          {{ __('Do you like what we do? Do you have a game server from mygserv.de or a web space? Then you have the
-          opportunity here to thank us by placing our advertising banner on your homepage / Discord / server.') }}
+          {{ __('Do you like what we do? Do you have a game server from mygserv.de or a web space? Then you have the opportunity here to thank us by placing our advertising banner on your homepage / Discord / server.') }}
         </p>
         <div class="mt-6 grid grid-cols-12 gap-4">
           <div class="lg:col-span-6 col-span-12 flex-col">
