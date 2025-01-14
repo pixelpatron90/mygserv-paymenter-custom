@@ -535,7 +535,6 @@ class Pterodactyl extends Server
             $json = [
                 'username' => $sanitized . '_' . $this->random_string(3) ?? $this->random_string(8),
                 'email' => $user->email,
-                'password' => $user->password,
                 'first_name' => $user->name,
                 'last_name' => $user->lastname ?? 'User',
             ];
