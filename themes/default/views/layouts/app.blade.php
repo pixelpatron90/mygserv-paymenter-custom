@@ -281,7 +281,7 @@
 
 <body class="font-sans bg-secondary-100 dark:bg-secondary-50 text-secondary-700">
 
-    <script type="module">
+    <script>
         document.addEventListener("visibilitychange", () => {
         if (document.hidden) {
             document.title = "Hey, komm zurück!";
