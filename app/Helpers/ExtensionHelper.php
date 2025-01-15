@@ -79,7 +79,7 @@ class ExtensionHelper
                 UnsuspendServer::dispatch($product);
             }
             if ($product->status == 'pending') {
-                CreateServer::dispatch($product);
+                //CreateServer::dispatch($product);
             }
             if ($product->status == 'pending' || $product->status == 'suspended') {
                 if ($product->billing_cycle) {
