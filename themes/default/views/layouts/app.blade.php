@@ -108,17 +108,6 @@
 
 <body class="font-sans bg-secondary-100 dark:bg-secondary-50 text-secondary-700">
 
-    <script type="module">
-        var default = config('app.name', 'Paymenter');
-        document.addEventListener("visibilitychange", () => {
-            if (document.hidden) {
-                document.title = "Hey! Komm zurück! <3";
-            } else {
-                document.title = default;
-            }
-        });
-    </script>
-
     @if (config('settings::theme:snow') == 1)
         <canvas class="snow" id="snow" width="1920" height="1080"></canvas>
     @endif
