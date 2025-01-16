@@ -55,20 +55,4 @@
     </div>
     @endif
 
-    <div class="content ">
-        <div class="content-box">
-            <div class="prose dark:prose-invert min-w-full">
-                <header class="flex flex-row gap-4">
-                    <x-microns-info class="w-6" />
-                    <h2 class="font-semibold text-2xl mb-2 mt-2 text-secondary-900">
-                        {{ __('Who or what is mygserv.de?') }}
-                    </h2>
-                </header>
-                <p>
-                    Lorem Ipsum
-                </p>
-            </div>
-        </div>
-    </div>
-
 </x-app-layout>
