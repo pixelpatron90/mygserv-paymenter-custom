@@ -42,8 +42,7 @@
                 <div class="content-box">
                     <h3 class="font-semibold text-lg">{{ $announcement->title }}</h3>
                     <div class="prose dark:prose-invert">
-                        @markdownify(strlen($announcement->announcement) > 100 ?
-                        substr($announcement->announcement, 0, 250) . '...' : $announcement->announcement)
+                        @markdownify($announcement->announcement)
                     </div>
                     <div class="flex justify-between items-center mt-3">
                         <span class="text-sm text-secondary-600">{{ __('Published') }}
