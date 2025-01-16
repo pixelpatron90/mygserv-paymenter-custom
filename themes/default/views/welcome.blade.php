@@ -38,7 +38,7 @@
         <h2 class="font-semibold text-2xl mb-2 text-secondary-900">{{ __('Announcements') }}</h2>
         <div class="grid grid-cols-12 gap-4">
             @foreach ($announcements->sortByDesc('created_at') as $announcement)
-            <div class="lg:col-span-4 md:col-span-12 col-span-12">
+            <div class="col-span-12">
                 <div class="content-box">
                     <h3 class="font-semibold text-lg">{{ $announcement->title }}</h3>
                     <div class="prose dark:prose-invert">@markdownify(strlen($announcement->announcement) > 100 ?
