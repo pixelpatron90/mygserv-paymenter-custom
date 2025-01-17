@@ -72,7 +72,7 @@
                         placeholder="{{ __('Password..') }}" name="password_confirmation" id="password-confirm"
                         icon="ri-lock-password-line" />
                 </div>
-                <div class="flex items-center justify-center">
+                <div class="flex items-center justify-center mt-4">
                     <x-recaptcha form="register" />
                 </div>
                 <div class="mt-3 flex justify-between items-center">
