@@ -27,7 +27,7 @@
                 <a href="{{ route('register') }}" class="text-sm text-secondary-600 underline mt-2 block text-center">{{
                     __('New here? Create an account.') }}</a>
 
-                <div class="flex items-center justify-center">
+                <div class="flex items-center justify-center mt-4">
                     <!-- Recaptcha, also send the form id -->
                     <x-recaptcha form="login" />
                 </div>
