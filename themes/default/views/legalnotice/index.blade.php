@@ -8,7 +8,7 @@
                 </header>
 
                 <h2 class="font-semibold text-xl mb-2 mt-2 text-secondary-900">
-                    {{ __('Information according to § 5 DDG:') }}
+                    {{ __('Information according to § 5 DDG:') }}sd
                 </h2>
 
                 <p>Thorsten Schnack</p>
