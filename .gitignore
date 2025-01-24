@@ -1,11 +1,11 @@
-/node_modules
+node_modules/
 /public/build
 /public/default
 /public/hot
 /public/storage
 /storage/*.key
 /public/images
-/vendor
+vendor/
 .env
 .env.backup
 .phpunit.result.cache
@@ -22,3 +22,4 @@ app/Extensions/Servers/Minecraft/*
 app/Extensions/Gateways/RazorPay/*
 themes/theme-clear/*
 .php-cs-fixer.cache
+node_modules
