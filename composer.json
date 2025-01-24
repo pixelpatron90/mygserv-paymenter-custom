@@ -20,7 +20,7 @@
         "codeat3/blade-microns": "^1.5",
         "diglactic/laravel-breadcrumbs": "^8.1",
         "doctrine/dbal": "^3.5",
-        "cviebrock/eloquent-sluggable": "^11.0",
+        "cviebrock/eloquent-sluggable": "^10.0",
         "larabug/larabug": "*",
         "laravel/horizon": "^5.30",
         "fakerphp/faker": "^1.20",
