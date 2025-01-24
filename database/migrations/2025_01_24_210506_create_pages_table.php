@@ -12,15 +12,15 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('pages', function (Blueprint $table) {
-            $table->increments(column: 'id');
+            $table->id();
             $table->string(column: 'name');
             $table->string(column: 'title');
             $table->string(column: 'slug');
             $table->text(column: 'content')->nullable();
             $table->boolean(column: 'active')->default(true);
             $table->string(column: 'comments_enabled')->default(false);
-            $table->integer(column: 'user_id')->unsigned();
-            $table->foreign(columns: 'user_id')->references('id')->on('users');
+            //$table->integer(column: 'user_id')->unsigned();
+            //$table->foreign(columns: 'user_id')->references('id')->on('users');
             $table->timestamps();
             $table->softDeletes();
         });
