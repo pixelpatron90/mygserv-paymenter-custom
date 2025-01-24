@@ -48,13 +48,13 @@ Route::group(['prefix' => 'admin', 'middleware' => 'permission:ADMINISTRATOR'], 
     });
 
     Route::group(['prefix' => 'pages'], function () {
-        Route::get('/', [App\Http\Controllers\Admin\PageController::class, 'index'])->middleware(['permission:VIEW_CATEGORIES'])->name('admin.categories');
-        Route::post('/', [App\Http\Controllers\Admin\PageController::class, 'reorder'])->middleware(['permission:EDIT_CATEGORIES'])->name('admin.categories.reorder');
-        Route::get('/create', [App\Http\Controllers\Admin\PageController::class, 'create'])->middleware(['permission:CREATE_CATEGORIES'])->name('admin.categories.create');
-        Route::post('/create', [App\Http\Controllers\Admin\PageController::class, 'store'])->middleware(['permission:CREATE_CATEGORIES'])->name('admin.categories.store');
-        Route::get('/{page}/edit', [App\Http\Controllers\Admin\PageController::class, 'edit'])->middleware(['permission:VIEW_CATEGORIES'])->name('admin.categories.edit');
-        Route::post('/{page}/edit', [App\Http\Controllers\Admin\PageController::class, 'update'])->middleware(['permission:EDIT_CATEGORIES'])->name('admin.categories.update');
-        Route::delete('/{page}/delete', [App\Http\Controllers\Admin\PageController::class, 'destroy'])->middleware(['permission:DELETE_CATEGORIES'])->name('admin.categories.delete');
+        Route::get('/', [App\Http\Controllers\Admin\PageController::class, 'index'])->middleware(['permission:VIEW_CATEGORIES'])->name('admin.pages');
+        Route::post('/', [App\Http\Controllers\Admin\PageController::class, 'reorder'])->middleware(['permission:EDIT_CATEGORIES'])->name('admin.pages.reorder');
+        Route::get('/create', [App\Http\Controllers\Admin\PageController::class, 'create'])->middleware(['permission:CREATE_CATEGORIES'])->name('admin.pages.create');
+        Route::post('/create', [App\Http\Controllers\Admin\PageController::class, 'store'])->middleware(['permission:CREATE_CATEGORIES'])->name('admin.pages.store');
+        Route::get('/{page}/edit', [App\Http\Controllers\Admin\PageController::class, 'edit'])->middleware(['permission:VIEW_CATEGORIES'])->name('admin.pages.edit');
+        Route::post('/{page}/edit', [App\Http\Controllers\Admin\PageController::class, 'update'])->middleware(['permission:EDIT_CATEGORIES'])->name('admin.pages.update');
+        Route::delete('/{page}/delete', [App\Http\Controllers\Admin\PageController::class, 'destroy'])->middleware(['permission:DELETE_CATEGORIES'])->name('admin.pages.delete');
     });
 
     Route::group(['prefix' => 'categories'], function () {
