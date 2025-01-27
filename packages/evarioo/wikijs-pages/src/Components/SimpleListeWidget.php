@@ -2,8 +2,9 @@
 
 namespace Evarioo\WikiJSPages\Components;
 
-use Livewire\Component;
+use config;
 use Illuminate\Support\Facades\Http;
+use Livewire\Component;
 
 class SimpleListeWidget extends Component
 {
@@ -18,7 +19,7 @@ class SimpleListeWidget extends Component
         $response = Http::withHeaders([
             'X-API-Key' => $this->config('apiKey'),
             'Content-Type' => 'application/json'
-        ])->get(config('evarioo-wikijs::wikijs.api_url'));
+        ])->get(config('evarioo-wikijs.wikijs.api_url'));
 
         dd($response);
     }
