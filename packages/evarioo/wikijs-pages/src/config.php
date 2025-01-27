@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'avatar' => env('DISCORD_AVATAR', true)
+    'simple-list-view' => null,
 ];
