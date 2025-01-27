@@ -1,0 +1,26 @@
+{
+  "name": "evarioo/wikijs-pages",
+  "description": "You can create the to-do-list of your task.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alexander Bergmann",
+      "email": "alxndr.wlfgng.brgmnn@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Evarioo\\WikiJSPages\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Evarioo\\WikiJSPages\\Providers\\WikiJSPagesServiceProvider"
+      ]
+    }
+  }
+}

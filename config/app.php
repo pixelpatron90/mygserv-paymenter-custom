@@ -212,6 +212,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Evarioo\WikiJSPages\Providers\WikiJSPagesServiceProvider::class,
 
         /*
          * Package Service Providers...
