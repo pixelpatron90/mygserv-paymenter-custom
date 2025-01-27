@@ -15,12 +15,7 @@ class SimpleListeWidget extends Component
 
     public function render()
     {
-        if (!config('evarioo-wikijs::simple-list-view') == null) {
-            return view('evarioo-wikijs::simple-list-view');
-        } else {
-            return view('evarioo-wikijs::widget');
-        }
-
+        return view('evarioo-wikijs::widget.simple-list');
     }
 
 }
