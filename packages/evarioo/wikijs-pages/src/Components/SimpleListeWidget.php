@@ -17,7 +17,7 @@ class SimpleListeWidget extends Component
     public function loadData()
     {
         $response = Http::withHeaders([
-            'X-API-Key' => $this->config('apiKey'),
+            'X-API-Key' => config('evarioo-wikijs.wikijs.api_key'),
             'Content-Type' => 'application/json'
         ])->get(config('evarioo-wikijs.wikijs.api_url'));
 
