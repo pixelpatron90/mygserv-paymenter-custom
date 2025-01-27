@@ -1,8 +1,10 @@
 <?php
 namespace Evarioo\WikiJSPages\Providers;
 
+use Evarioo\WikiJSPages\Components\SimpleListeWidget;
 use Illuminate\Support\ServiceProvider;
-use Prakash\Todolist\Models\Task;
+use Livewire\Livewire;
+
 class WikiJSPagesServiceProvider extends ServiceProvider
 {
     /**
