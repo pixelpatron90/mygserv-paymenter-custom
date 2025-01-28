@@ -62,7 +62,7 @@ class SimpleListeWidget extends Component
 
     public function render()
     {
-        dd($this->loadData2());
+        dd($this->loadData());
     }
 
 }
