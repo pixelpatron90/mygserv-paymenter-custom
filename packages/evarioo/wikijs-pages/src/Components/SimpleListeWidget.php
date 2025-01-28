@@ -10,7 +10,7 @@ use Livewire\WithPagination;
 class SimpleListeWidget extends Component
 {
     use WithPagination;
-    public $per_page = 5;
+    public $per_page;
 
     public $widget_title;
     public $wiki_url;
@@ -18,6 +18,7 @@ class SimpleListeWidget extends Component
 
     public function mount()
     {
+        $this->per_page = (config('wikijs.widget.per_page') ? config('wikijs.widget.per_page') : 5);
         $this->widget_title = config('wikijs.widget.title');
         $this->wiki_url = config('wikijs.wikijs.wiki_url');
         $this->api_token = config('wikijs.wikijs.api_key');
