@@ -28,11 +28,7 @@ class SimpleListeWidget extends Component
 
         $response = json_decode($result->getBody());
 
-        if ($response->successful()) {
-            dd($response);
-        } else {
-            dd($response);
-        }
+        dd($response);
     }
 
     public function render()
