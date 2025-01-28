@@ -10,11 +10,10 @@
         <ul>
             @foreach ($data->pages as $page)
             <li>
-                <a href=""
+                <a href="{{ $data->getWikiPageUrl($page['path']) }}"
                     class="px-2 py-2 hover:bg-secondary-300 flex items-center gap-x-2 rounded-md transition-all ease-in-out">
                     <i class="fa-solid fa-caret-right me-2"></i>
                     {{ $page['title'] }}
-                    {{ $page['path'] }}
                 </a>
             </li>
             @endforeach
