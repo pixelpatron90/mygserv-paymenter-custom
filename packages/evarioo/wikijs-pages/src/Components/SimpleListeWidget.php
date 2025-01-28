@@ -32,7 +32,7 @@ class SimpleListeWidget extends Component
         $request = new Request('POST', 'https://wiki.mygserv.de/graphql', $headers, $body);
         $result = $client->sendAsync($request)->wait();
 
-        dd($result->json()['data']['pages'];);
+        dd($result->json()['data']['pages']);
 
 
 
