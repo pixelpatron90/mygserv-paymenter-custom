@@ -25,7 +25,6 @@ class WikiJSPagesServiceProvider extends ServiceProvider
                 ],
                 ['evarioo-wikijs'],
             );
-
         }
 
     }
