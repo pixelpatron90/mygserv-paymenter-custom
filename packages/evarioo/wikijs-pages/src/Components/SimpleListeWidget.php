@@ -28,10 +28,13 @@ class SimpleListeWidget extends Component
             'Authorization' => 'Bearer ' . $apiToken,
         ];
         $body = '{"query":"{\\r\\n  pages {\\r\\n    list (orderBy: TITLE) {\\r\\n      id\\r\\n      path\\r\\n      title\\r\\n    }\\r\\n  }\\r\\n}","variables":{}}';
-        $request = new Request('POST', 'https://wiki.mygserv.de/graphql', $headers, $body);
-        $res = $client->sendAsync($request)->wait();
 
-        dd($res->getBody());
+        $request = new Request('POST', 'https://wiki.mygserv.de/graphql', $headers, $body);
+        $result = $client->sendAsync($request)->wait();
+
+        dd($result->json()['data']['pages'];);
+
+
 
     }
 
