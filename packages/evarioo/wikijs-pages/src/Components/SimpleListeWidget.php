@@ -35,9 +35,11 @@ class SimpleListeWidget extends Component
         }
         GRAPHQL;
 
+        $query2 = '{"query":"{\\r\\n  pages {\\r\\n    list (orderBy: TITLE) {\\r\\n      id\\r\\n      path\\r\\n      title\\r\\n    }\\r\\n  }\\r\\n}","variables":{}}';
+
         $response = Http::withToken($apiToken)
             ->post($apiUrl, [
-                'query' => $query,
+                'query' => $query2,
             ]);
 
         // Ergebnis prüfen
