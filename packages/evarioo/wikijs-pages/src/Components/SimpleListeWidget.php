@@ -28,7 +28,17 @@ class SimpleListeWidget extends Component
 
         $response = json_decode($result->getBody());
 
-        dd($response);
+        if (isset($response->message)) {
+            $widgetdata = (object) [
+                'error' => $response->message,
+                'code' => $response->code
+            ];
+
+            return $widgetdata;
+            dd($widgetdata);
+        }
+
+
     }
 
     public function render()
