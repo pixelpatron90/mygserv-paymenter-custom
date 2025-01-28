@@ -65,7 +65,7 @@ class SimpleListeWidget extends Component
 
     public function render()
     {
-        return view('evarioo-wikijs::widget.simple-list', [
+        return view('evarioo.wikijs.widget.simple-list', [
             'data' => $this->loadData(),
         ]);
     }
