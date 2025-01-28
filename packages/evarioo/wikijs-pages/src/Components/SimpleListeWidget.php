@@ -26,21 +26,9 @@ class SimpleListeWidget extends Component
             'Content-Type' => 'application/json'
         ])->get($url . $endpoint);
 
-        dd($result->getBody());
-
         $response = json_decode($result->getBody());
 
-        if (isset($response->message)) {
-            $widgetdata = (object) [
-                'error' => $response->message,
-                'code' => $response->code
-            ];
-
-            return $widgetdata;
-            dd($result);
-        }
-
-
+        dd($response);
     }
 
     public function render()
