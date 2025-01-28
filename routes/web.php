@@ -1,7 +1,9 @@
 <?php
 
 use App\Classes\Routing;
+use App\Http\Controllers\LanguageController;
 use Illuminate\Support\Facades\Route;
+
 
 require __DIR__ . '/admin.php';
 require __DIR__ . '/extensions.php';
@@ -21,6 +23,8 @@ if (!Routing::useLaravelRouting()) {
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/language/{locale?}', [LanguageController::class, 'update'])->name('language.update');
 
 Route::get('/', [App\Http\Controllers\BasisController::class, 'index'])->name('index');
 Route::get('/home', [App\Http\Controllers\Clients\HomeController::class, 'index'])->middleware(['auth'])->name('clients.home');
