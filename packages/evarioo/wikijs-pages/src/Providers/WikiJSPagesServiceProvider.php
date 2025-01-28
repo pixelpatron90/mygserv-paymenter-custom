@@ -37,8 +37,6 @@ class WikiJSPagesServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('Evarioo\WikiJSPages\Controllers\WikiJSPagesController')->tags(['my-package-tag']);
-        ;
         $this->mergeConfigFrom(__DIR__ . '/../config.php', 'evarioo-wikijs');
     }
 }
