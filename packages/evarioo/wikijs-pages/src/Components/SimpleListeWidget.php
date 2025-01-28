@@ -10,7 +10,7 @@ use Livewire\WithPagination;
 class SimpleListeWidget extends Component
 {
     use WithPagination;
-    public $per_page = 10;
+    public $per_page = 5;
 
     public $widget_title;
     public $wiki_url;
