@@ -2,11 +2,15 @@
 
 namespace Evarioo\WikiJSPages\Components;
 
+use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\Http;
 use Livewire\Component;
+use Livewire\WithPagination;
 
 class SimpleListeWidget extends Component
 {
+    use WithPagination;
+    public $per_page = 10;
 
     public $widget_title;
     public $wiki_url;
@@ -53,10 +57,19 @@ class SimpleListeWidget extends Component
             return $widgetdata;
         }
 
+        $slicedData = array_slice($response->json()['data']['pages']['list'], (request('page') ? request('page') - 1 : 0) * $this->per_page, $this->per_page);
+        $paginatedData = LengthAwarePaginator(
+            $slicedData,
+            count($slicedData),
+            $this->per_page,
+            request('page'),
+            ['path' => url()->current()]
+        );
+
         $widgetdata = (object) [
             'widget_title' => $this->widget_title,
             'wiki_url' => $this->wiki_url,
-            'pages' => $response->json()['data']['pages']['list'],
+            'pages' => $paginatedData,
         ];
 
         return $widgetdata;
