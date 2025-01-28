@@ -19,6 +19,16 @@ class WikiJSPagesServiceProvider extends ServiceProvider
         //$this->loadMigrationsFrom(__DIR__ . '/../migrations');
         $this->loadViewsFrom(__DIR__ . '/../views', 'evarioo-wikijs');
         Livewire::component('evarioo-wikijs', SimpleListeWidget::class);
+
+        if ($this->app->runningInConsole()) {
+            $this->publishes([
+                __DIR__ . '/../views' => base_path('resources/views/prakash/todolist'),
+            ], 'views');
+            $this->publishes([
+                __DIR__ . '/../../config/config.php' => config_path('task.php'),
+            ], 'config');
+        }
+
     }
 
     /**
