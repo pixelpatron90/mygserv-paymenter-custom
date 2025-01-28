@@ -2,7 +2,7 @@
 
 return [
     'wikijs' => [
-        'api_url' => null,
+        'wiki_url' => null,
         'api_key' => null
     ],
     'widget' => [
