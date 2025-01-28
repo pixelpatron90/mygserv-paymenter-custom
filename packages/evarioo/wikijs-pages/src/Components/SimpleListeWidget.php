@@ -26,6 +26,8 @@ class SimpleListeWidget extends Component
             'Content-Type' => 'application/json'
         ])->get($url . $endpoint);
 
+        dd($result);
+
         $response = json_decode($result->getBody());
 
         if (isset($response->message)) {
@@ -35,7 +37,7 @@ class SimpleListeWidget extends Component
             ];
 
             return $widgetdata;
-            dd($widgetdata);
+            dd($result);
         }
 
 
