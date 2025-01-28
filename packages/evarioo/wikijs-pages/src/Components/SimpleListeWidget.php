@@ -59,13 +59,13 @@ class SimpleListeWidget extends Component
         $pages = $response->json()['data']['pages']['list'];
 
         foreach ($pages as $page) {
-            dd($page);
+            $wikiPages = $pages;
         }
 
         //dd($wikiPages);
 
         $widgetdata = (object) [
-            'page_title' => $wikiPages,
+            'pages' => $wikiPages,
         ];
 
         return $widgetdata;
