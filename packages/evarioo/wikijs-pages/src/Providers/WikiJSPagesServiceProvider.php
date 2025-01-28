@@ -25,7 +25,7 @@ class WikiJSPagesServiceProvider extends ServiceProvider
                 __DIR__ . '/../views' => base_path('resources/views/prakash/todolist'),
             ], 'views');
             $this->publishes([
-                __DIR__ . '/../../config/config.php' => config_path('task.php'),
+                __DIR__ . '/../config.php' => config_path('wikijs.php'),
             ], 'config');
         }
 
@@ -39,15 +39,6 @@ class WikiJSPagesServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->make('Evarioo\WikiJSPages\Controllers\WikiJSPagesController');
-        // Automatically apply the package configuration
         $this->mergeConfigFrom(__DIR__ . '/../config.php', 'evarioo-wikijs');
-
-        // Register the main class to use with the facade
-        $this->app->singleton('task', function () {
-            return new Task;
-        });
-        // $this->app->bind('task', function () {
-        //     return new Task();
-        // });
     }
 }
