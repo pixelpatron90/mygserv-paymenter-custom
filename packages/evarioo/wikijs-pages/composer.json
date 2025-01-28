@@ -16,6 +16,11 @@
       "Evarioo\\WikiJSPages\\": "src/"
     }
   },
+  "scripts": {
+    "post-update-cmd": [
+      "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
+    ]
+  },
   "extra": {
     "laravel": {
       "providers": [

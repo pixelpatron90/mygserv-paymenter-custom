@@ -18,12 +18,14 @@ class WikiJSPagesServiceProvider extends ServiceProvider
         Livewire::component('evarioo-wikijs', SimpleListeWidget::class);
 
         if ($this->app->runningInConsole()) {
-            $this->publishes([
-                __DIR__ . '/../views' => base_path('resources/views/evarioo/wikijs'),
-            ], 'views');
-            $this->publishes([
-                __DIR__ . '/../config.php' => config_path('wikijs.php'),
-            ], 'config');
+            $this->publishes(
+                [
+                    __DIR__ . '/../views' => base_path('resources/views/evarioo/wikijs'),
+                    __DIR__ . '/../config.php' => config_path('wikijs.php'),
+                ],
+                ['evarioo-wikijs'],
+            );
+
         }
 
     }
@@ -35,7 +37,8 @@ class WikiJSPagesServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('Evarioo\WikiJSPages\Controllers\WikiJSPagesController');
+        $this->app->make('Evarioo\WikiJSPages\Controllers\WikiJSPagesController')->tags(['my-package-tag']);
+        ;
         $this->mergeConfigFrom(__DIR__ . '/../config.php', 'evarioo-wikijs');
     }
 }
