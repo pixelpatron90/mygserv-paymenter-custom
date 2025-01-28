@@ -17,5 +17,6 @@
             </li>
             @endforeach
         </ul>
+        {{ $data->pages->links('evarioo.wikijs.widget.pagination') }}
     </div>
 </div>
