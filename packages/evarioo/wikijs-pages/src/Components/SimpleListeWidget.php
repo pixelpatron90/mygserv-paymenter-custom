@@ -15,7 +15,7 @@ class SimpleListeWidget extends Component
     public function mount()
     {
         $this->widget_title = config('wikijs.widget.title');
-        $this->wiki_url = config('wikijs.wikijs.api_url');
+        $this->wiki_url = config('wikijs.wikijs.wiki_url');
         $this->api_token = config('wikijs.wikijs.api_key');
     }
 
