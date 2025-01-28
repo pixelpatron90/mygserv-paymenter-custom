@@ -9,7 +9,7 @@ class SimpleListeWidget extends Component
 {
 
     public $widget_title;
-    public $api_url;
+    public $wiki_url;
     public $api_token;
 
     public function mount()
