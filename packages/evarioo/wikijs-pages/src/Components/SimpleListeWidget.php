@@ -28,6 +28,8 @@ class SimpleListeWidget extends Component
 
         if ($response->successful()) {
             dd('sad');
+        } else {
+            dd('no');
         }
     }
 
