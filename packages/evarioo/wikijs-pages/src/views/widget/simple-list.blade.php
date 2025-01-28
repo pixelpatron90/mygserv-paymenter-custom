@@ -8,9 +8,10 @@
     <div class="content">
         <ul>
             @foreach ($data->pages as $page)
-            <li>
+            <li
+                class="mb-1 last:mb-0 text-white odd:bg-red-500 odd:hover:bg-red-600 bg-secondary-500 hover:bg-secondary-600 rounded-md">
                 <a target="_blank" href="{{ $data->wiki_url }}/{{ $page['path'] }}"
-                    class="px-2 py-2 even:bg-red-500 even:hover:bg-red-600 flex items-center gap-x-2 rounded-md transition-all ease-in-out">
+                    class="px-2 py-2 flex items-center transition-all ease-in-out">
                     <i class="fa-solid fa-caret-right me-2"></i>
                     {{ $page['title'] }}
                 </a>
