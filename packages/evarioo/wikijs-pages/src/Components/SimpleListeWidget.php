@@ -19,7 +19,7 @@ class SimpleListeWidget extends Component
         $this->api_token = config('wikijs.wikijs.api_key');
     }
 
-    public function getWikiPageUrl($page)
+    public function get_wiki_page_url($page)
     {
         $url = $this->wiki_url . '/' . $page;
         return $url;
@@ -61,7 +61,7 @@ class SimpleListeWidget extends Component
 
         $widgetdata = (object) [
             'widget_title' => $this->widget_title,
-            'wiki_url' => $this->wiki_url,
+            'wiki_page_url' => $this->get_wiki_page_url,
             'pages' => $response->json()['data']['pages']['list'],
         ];
 
