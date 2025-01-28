@@ -2,8 +2,8 @@
 
 return [
     'wikijs' => [
-        'api_url' => '',
-        'api_key' => ''
+        'api_url' => null,
+        'api_key' => null
     ],
     'simple-list-view' => null,
 ];

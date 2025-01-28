@@ -18,9 +18,9 @@ class SimpleListeWidget extends Component
     {
 
         $response = Http::withHeaders([
-            'X-API-Key' => config('evarioo-wikijs.wikijs.api_key'),
+            'X-API-Key' => config('evarioo-wikijs::wikijs.api_key'),
             'Content-Type' => 'application/json'
-        ])->get(config('evarioo-wikijs.wikijs.api_url' . '/api/v1/pages'));
+        ])->get(config('evarioo-wikijs::wikijs.api_url') . '/api/v1/pages');
 
         dd($response->json());
     }

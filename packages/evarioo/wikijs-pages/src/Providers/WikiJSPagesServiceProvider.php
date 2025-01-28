@@ -14,15 +14,12 @@ class WikiJSPagesServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //$this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'evarioo-wikijs');
-        //$this->loadRoutesFrom(__DIR__ . '/../routes/routes.php');
-        //$this->loadMigrationsFrom(__DIR__ . '/../migrations');
         $this->loadViewsFrom(__DIR__ . '/../views', 'evarioo-wikijs');
         Livewire::component('evarioo-wikijs', SimpleListeWidget::class);
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../views' => base_path('resources/views/prakash/todolist'),
+                __DIR__ . '/../views' => base_path('resources/views/evarioo/wikijs'),
             ], 'views');
             $this->publishes([
                 __DIR__ . '/../config.php' => config_path('wikijs.php'),
