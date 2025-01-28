@@ -5,5 +5,10 @@ return [
         'api_url' => null,
         'api_key' => null
     ],
-    'simple-list-view' => null,
+    'widget' => [
+        'title' => 'Wikipedia'
+    ],
+    'custom_views' => [
+        'simple_list' => null
+    ],
 ];
