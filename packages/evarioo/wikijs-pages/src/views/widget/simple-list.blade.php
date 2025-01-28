@@ -6,7 +6,6 @@
         </h1>
     </div>
     <div class="content">
-
         <ul>
             @foreach ($data->pages as $page)
             <li>
