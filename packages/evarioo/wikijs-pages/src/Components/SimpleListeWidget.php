@@ -57,13 +57,12 @@ class SimpleListeWidget extends Component
         }
 
         $pages = $response->json()['data']['pages']['list'];
-        //dd($pages);
 
-        foreach ($pages as $i => $page) {
-            $wikiPages[$page][] = $page;
+        foreach ($pages as $page) {
+            dd($page);
         }
 
-        dd($wikiPages);
+        //dd($wikiPages);
 
         $widgetdata = (object) [
             'page_title' => $wikiPages,
