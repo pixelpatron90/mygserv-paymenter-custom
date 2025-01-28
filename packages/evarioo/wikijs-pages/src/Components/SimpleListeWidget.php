@@ -14,9 +14,9 @@ class SimpleListeWidget extends Component
 
     public function mount()
     {
-        $this->widget_title = config('evarioo-wikijs.widget.title');
-        $this->api_url = config('evarioo-wikijs.wikijs.api_url');
-        $this->api_token = config('evarioo-wikijs.wikijs.api_key');
+        $this->widget_title = config('wikijs.widget.title');
+        $this->api_url = config('wikijs.wikijs.api_url');
+        $this->api_token = config('wikijs.wikijs.api_key');
     }
 
     public function loadData()
