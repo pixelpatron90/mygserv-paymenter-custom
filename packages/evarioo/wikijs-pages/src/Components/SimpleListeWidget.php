@@ -56,7 +56,7 @@ class SimpleListeWidget extends Component
             return $widgetdata;
         }
 
-        dd($response->json()['data']['pages']['list']['title']);
+        dd($response->json()['data']['pages']['list']->title);
         //return response()->json($response->json());
 
         $widgetdata = (object) [
