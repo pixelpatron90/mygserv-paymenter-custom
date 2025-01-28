@@ -15,7 +15,7 @@ class SimpleListeWidget extends Component
     public function mount()
     {
         $this->widget_title = config('wikijs.widget.title');
-        $this->api_url = config('wikijs.wikijs.api_url');
+        $this->wiki_url = config('wikijs.wikijs.api_url');
         $this->api_token = config('wikijs.wikijs.api_key');
     }
 
@@ -43,7 +43,7 @@ class SimpleListeWidget extends Component
             'variables' => new \stdClass(), // Leere Variablen
         ];
 
-        $response = Http::withHeaders($headers)->post($this->api_url, $body);
+        $response = Http::withHeaders($headers)->post($this->wiki_url . '/graphql', $body);
 
         if (!$response->successful()) {
             $widgetdata = (object) [
