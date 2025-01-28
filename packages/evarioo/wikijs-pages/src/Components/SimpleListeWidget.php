@@ -2,7 +2,6 @@
 
 namespace Evarioo\WikiJSPages\Components;
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Livewire\Component;
 
@@ -20,22 +19,7 @@ class SimpleListeWidget extends Component
         $this->api_token = config('wikijs.wikijs.api_key');
     }
 
-    function paginate_results($items, $perPage = 10, $page = null, $options = [])
-    {
-        $page = $page ?: (LengthAwarePaginator::resolveCurrentPage() ?: 1);
-        $items = $items instanceof Collection ? $items : Collection::make($items);
-        $offset = ($page - 1) * $perPage;
-
-        return new LengthAwarePaginator(
-            $items->slice($offset, $perPage),
-            $items->count(),
-            $perPage,
-            $page,
-            $options
-        );
-    }
-
-    public function loadData(Request $request)
+    public function loadData()
     {
         $headers = [
             'Content-Type' => 'application/json',
@@ -69,17 +53,10 @@ class SimpleListeWidget extends Component
             return $widgetdata;
         }
 
-        $perPage = 10; // Anzahl der Elemente pro Seite
-        $page = $request->get('page', 1);
-        $pages = $this->paginate_results($response->json()['data']['pages']['list'], $perPage, $page, [
-            'path' => $request->url(),
-            'query' => $request->query(),
-        ]);
-
         $widgetdata = (object) [
             'widget_title' => $this->widget_title,
             'wiki_url' => $this->wiki_url,
-            'pages' => $pages,
+            'pages' => $response->json()['data']['pages']['list'],
         ];
 
         return $widgetdata;
