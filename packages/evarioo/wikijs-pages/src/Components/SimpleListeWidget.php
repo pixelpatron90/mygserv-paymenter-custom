@@ -48,15 +48,21 @@ class SimpleListeWidget extends Component
 
         $response = Http::withHeaders($headers)->post($apiUrl, $body);
 
-        if ($response->successful()) {
-            return response()->json($response->json());
-        } else {
+        if (!$response->successful()) {
             $widgetdata = (object) [
                 'status' => $response->status(),
                 'message' => $response->body()
             ];
             return $widgetdata;
         }
+
+        //return response()->json($response->json());
+
+        $widgetdata = (object) [
+            'page_title' => $response->title,
+        ];
+
+        return $widgetdata;
 
     }
 
