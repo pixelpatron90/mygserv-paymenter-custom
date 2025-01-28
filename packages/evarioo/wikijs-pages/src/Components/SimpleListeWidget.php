@@ -61,7 +61,7 @@ class SimpleListeWidget extends Component
         $slicedData = array_slice($response->json()['data']['pages']['list'], (request('page') ? request('page') - 1 : 0) * $this->per_page, $this->per_page);
         $paginatedData = new LengthAwarePaginator(
             $slicedData,
-            count($slicedData),
+            count($response->json()['data']['pages']['list']),
             $this->per_page,
             request('page'),
             ['path' => url()->current()]
